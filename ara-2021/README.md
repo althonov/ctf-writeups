@@ -170,4 +170,5 @@ Diberi file jack.png yang hanya berisi warna. Solvenya bisa dengan mencari nilai
 ![](images/ara-jacksparrow.png)
 
 Hasilnya flag yang terduplikat charnya.
+
 **Flag: ara2021{3z_Pz_l3m0n_SQZ}**
