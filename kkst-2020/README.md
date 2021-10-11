@@ -97,3 +97,45 @@ Jalankan
 ![](images/kkst2020-luaskeliling.png)
 
 **Flag: KKST2020{NINJA_IN_PJAMAS}**
+
+### Forensic: Dia Jahil!
+Setelah mengekstrak mesin yang diberikan tadi, pada challenge ini diminta untuk mencari file yang diubah pada website, jadi kami mencari di direktori /var/www/html/
+
+![](images/kkst2020-diajahil1.png)
+
+Terlihat perbedaan pada direktori proses
+
+![](images/kkst2020-diajahil2.png)
+
+Di dalam direktori proses terdapat perbedaan tanggal pada file koneksi.php
+**Flag: KKST2020{koneksi.php}**
+
+### Forensic: Siapa yang melakukan?
+Dari deskripsi challenge, attacker melakukan serangan pada SSH, kami lalu mengecek auth.log yang ada pada direktori /var/log/. Kami mendapatkan potongan flag pada Invalid user.
+
+![](images/kkst2020-siapayangmelakukan.png)
+
+Disusun dan didapatkan flag.
+**Flag: KKST2020{L00K_H3rS_Ch3ck}**
+
+### Forensic: Ke mana dia kembali?
+Di challenge ini attacker melakukan backconnect dan disuruh untuk mencari IP dan port yang digunakan. Kami lalu mengecek semua log pada /var/log/ dan mencari dengan filter **nc**. Hasilnya di file access.log ditemukan bahwa attacker melakukan backconnect melalui admin.php.
+
+![](images/kkst2020-kemanadiakembali1.png)
+
+Jadi kami mempersempit pencarian dengan filter **admin.php?0=** dan ditemukan IP dan port yang digunakan.
+
+![](images/kkst2020-kemanadiakembali2.png)
+
+**Flag: {157.1.12.12:1399}**
+
+### Forensic: Keberuntungan
+Di challenge ini attacker menyembunyikan file berekstensi .exe di dalam mesin. Kami mencari dan ditemukan file bd.exe pada direktori /usr/bin/
+
+![](images/kkst2020-keberuntungan1.png)
+
+Kami mengambil file tersebut dan melakukan analisis menggunakan [Hybrid Analysis](https://www.hybrid-analysis.com/), hasilnya didapatkan informasi sebagai berikut.
+
+![](images/kkst2020-keberuntungan2.png)
+
+**Flag: {/usr/bin/bd.exe:172.198.111.115:1331}**
