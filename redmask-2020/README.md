@@ -4,7 +4,7 @@
 ### Web: F4st
 Diberikan link website dengan tampilan seperti berikut.
 
-![](images/redmask2020-f4st1.png)
+![](images/redmask2020-f4st.png)
 
 Dari deskripsi challenge ini kita harus melakukan POST pada parameter RedMask. Setelah dilakukan ternyata kita perlu melakukan decode response Get-flag yang berisi string base64 dan POST dengan parameter RedMask. Dibuat solver menggunakan python.
 ```python
