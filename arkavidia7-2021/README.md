@@ -99,3 +99,11 @@ Kami mengira itu merupakan flag, ternyata file terdapat file didalam itsme.jpg y
 **Flag:
 Arkav7{why_dO_th3_An1matr0nics_hav3_a_t1m3r_anYWAy1209362819
 23710}**
+
+## Final
+### Zombies In Package
+Diberi file zip dengan deskripsi bahwa file tersebut tidak dipassword, namun setelah dibuka ternyata file tersebut meminta password. Mencari referensi dari internet hasilnya data yang mendefinisikan zip berpassword atau tidak adalah flags dari tiap chunk. Jadi tinggal mengubah 1 bute pada address **0x14d** (bagian flag) dari **0x9** menjadi **0x0** lalu unzip seperti biasa.
+
+![](images/arkav7-zombiesinpackage.png)
+
+**Flag: Arkav7{the_zip_is_not_passworded}**
