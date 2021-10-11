@@ -27,5 +27,7 @@ while($j==0){
     }
 }
 ?>
+Jalankan
+![](images/kkst2020-passwordvm.png)
 ```
 **Flag: KKST2020{6879d9f4300554b113292dfc94d7335a}**
