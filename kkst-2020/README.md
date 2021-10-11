@@ -139,3 +139,23 @@ Kami mengambil file tersebut dan melakukan analisis menggunakan [Hybrid Analysis
 ![](images/kkst2020-keberuntungan2.png)
 
 **Flag: {/usr/bin/bd.exe:172.198.111.115:1331}**
+
+### OSINT: Find My Number
+Dari deskripsi challenge, diminta untuk mencari nomor telepon developer dari web https://2020.kks-tniad.id/, kami terpikir jika developer meninggalkan informasi pada direktori .git. Dari sana didapatkan link github milik developer.
+
+![](images/kkst2020-findmynumber1.png)
+
+Dari deskripsi github, terdapat link twitter yang hanya memiliki 1 following.
+
+![](images/kkst2020-findmynumber2.png)
+
+Di twitter tersebut, terdapat 2 nomor telepon yaitu pada bio dan tweet, dan yang benar ada pada tweet.
+
+![](images/kkst2020-findmynumber3.png)
+
+**Flag: KKST2020{081234432123}**
+
+### Cryptography: Fine?
+Di challenge ini diberi sebuah string cipher dan script python untuk melakukan encrypt. Setelah dilakukan analisa, kami mencari k1 dan k2 dengan menggunakan format awal flag yaitu KKST2020, hasilnya didapatkan k1 = 15 dan k2 = 62, lalu dilakukan decrypt setiap char pada string cipher.
+
+**Flag: KKST2020{Semoga_Corona_Cepat_hilang_YA_jawab_Amin}**
