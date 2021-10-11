@@ -1,5 +1,5 @@
 
-# KKST CTF 2020 - aimer
+# RedMask CTF 2020 - aimyon
 
 ### Web: F4st
 Diberikan link website dengan tampilan seperti berikut.
