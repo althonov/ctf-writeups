@@ -96,4 +96,4 @@ Jalankan
 
 ![](images/kkst2020-luaskeliling.png)
 
-***Flag: KKST2020{NINJA_IN_PJAMAS}***
+**Flag: KKST2020{NINJA_IN_PJAMAS}**
