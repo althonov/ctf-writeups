@@ -2,7 +2,7 @@
 # Arkavidia 7.0 CTF - heker masa depan 😎
 
 
-## Qualification
+## Kualifikasi
 
 ### Miscellaneous: Welcome to Arkavidia 7.0
 Join ke discord CTF Arkavidia 7 dan flag ditemukan di channel misc.
